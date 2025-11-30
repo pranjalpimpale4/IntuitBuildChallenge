@@ -36,17 +36,72 @@ public class Configuration {
         Scanner scanner = new Scanner(System.in);
         
         System.out.println("\n=== SIMULATION CONFIGURATION ===\n");
-        System.out.print("Enter Number of Producers: ");
-        int producers = scanner.nextInt();
-        System.out.print("Enter Items per Producer: ");
-        int itemsPerProducer = scanner.nextInt();
-        System.out.print("Enter Number of Consumers: ");
-        int consumers = scanner.nextInt();
-        System.out.print("Enter Queue Capacity: ");
-        int capacity = scanner.nextInt();
+        int producers = readIntegerInput(scanner, "Enter Number of Producers: ");
+        int itemsPerProducer = readIntegerInput(scanner, "Enter Items per Producer: ");
+        int consumers = readIntegerInput(scanner, "Enter Number of Consumers: ");
+        int capacity = readIntegerInput(scanner, "Enter Queue Capacity: ");
         
         System.out.println("\nConfiguration Loaded.");
         return new Configuration(producers, itemsPerProducer, consumers, capacity);
+    }
+    
+    /**
+     * Reads and validates integer input from the user.
+     * Rejects non-integer input (alphabets, special characters), numbers too large for int,
+     * and zero or negative numbers.
+     * Prompts the user again until valid input is provided.
+     * 
+     * @param scanner Scanner instance for reading input
+     * @param prompt Message to display to the user
+     * @return valid positive integer value
+     */
+    private static int readIntegerInput(Scanner scanner, String prompt) {
+        while (true) {
+            System.out.print(prompt);
+            try {
+                String input = scanner.nextLine().trim();
+                
+                // Check if input is empty
+                if (input.isEmpty()) {
+                    System.out.println("ERROR: Input cannot be empty. Please enter a valid integer.");
+                    continue;
+                }
+                
+                // Try to parse as integer
+                try {
+                    int value = Integer.parseInt(input);
+                    
+                    // Check if value is positive (greater than 0)
+                    if (value <= 0) {
+                        System.out.println("ERROR: Input must be greater than 0. Please enter a positive integer.");
+                        continue;
+                    }
+                    
+                    return value;
+                } catch (NumberFormatException e) {
+                    // Check if it contains alphabets or special characters
+                    if (!input.matches("^-?\\d+$")) {
+                        // Contains non-digit characters
+                        if (input.matches(".*[a-zA-Z].*")) {
+                            System.out.println("ERROR: Input contains alphabets. Please enter a valid integer.");
+                        } else {
+                            System.out.println("ERROR: Input contains special characters. Please enter a valid integer.");
+                        }
+                    } else {
+                        // Number is too large for int
+                        System.out.println("ERROR: Number is too large. Please enter a number between " + 
+                                         Integer.MIN_VALUE + " and " + Integer.MAX_VALUE + ".");
+                    }
+                    continue;
+                }
+            } catch (Exception e) {
+                System.out.println("ERROR: Invalid input. Please enter a valid integer.");
+                // Clear the scanner buffer in case of any issues
+                if (scanner.hasNextLine()) {
+                    scanner.nextLine();
+                }
+            }
+        }
     }
     
     /**
