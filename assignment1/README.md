@@ -197,11 +197,6 @@ The system will:
 - Check file permissions in the `assignment1` folder
 - The log file is created in `assignment1/execution_history.log` relative to your working directory
 
-### No Console Output
-- Ensure System.out is not redirected
-- Check IDE console settings
-- Verify Maven exec plugin is configured correctly
-
 ### Simulation Hangs
 - Check if all items are being produced/consumed
 - Verify queue capacity is sufficient
