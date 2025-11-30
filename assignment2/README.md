@@ -364,20 +364,6 @@ mvn exec:java -Dexec.mainClass="com.pranjal.assign2.DataSeeder"
 - On Linux/Mac, ensure terminal supports ANSI codes
 - Colors are optional - functionality works without them
 
-### Issue: Maven not found
-
-**Solution:**
-- Install Maven and add to PATH
-- Or use IDE's built-in Maven support
-- Or compile manually with `javac`
-
-### Issue: Java version error
-
-**Solution:**
-- Ensure JDK 17+ is installed
-- Check: `java -version`
-- Update JAVA_HOME if needed
-
 ---
 
 ## Dataset Design and Assumptions
