@@ -1,0 +1,96 @@
+[22:43:50.965] [SYSTEM         ] : Logger Initialized. Recording events...
+[22:43:50.965] [SYSTEM         ] : Initializing simulation with Configuration{producers=3, itemsPerProducer=10, consumers=1, capacity=2, totalItems=30}
+[22:43:50.966] [Consumer-1     ] : STARTED.
+[22:43:50.966] [Producer-1     ] : STARTED.
+[22:43:50.966] [AUTO-SCALER    ] : Monitor Started.
+[22:43:50.967] [Producer-2     ] : STARTED.
+[22:43:50.967] [SYSTEM         ] : Waiting for 30 items to be processed...
+[22:43:50.968] [Producer-3     ] : STARTED.
+[22:43:51.026] [Producer-3     ] : ADDED Record-3-1 | Queue Size: 0
+[22:43:51.026] [Consumer-1     ] : PROCESSED Record-3-1 | Queue Size: 0
+[22:43:51.087] [Producer-1     ] : ADDED Record-1-1 | Queue Size: 0
+[22:43:51.087] [Consumer-1     ] : PROCESSED Record-1-1 | Queue Size: 0
+[22:43:51.092] [Producer-2     ] : ADDED Record-2-1 | Queue Size: 1
+[22:43:51.165] [Producer-3     ] : ADDED Record-3-2 | Queue Size: 2
+[22:43:51.286] [Consumer-1     ] : PROCESSED Record-2-1 | Queue Size: 2
+[22:43:51.286] [Producer-1     ] : ADDED Record-1-2 | Queue Size: 2
+[22:43:51.402] [Producer-2     ] : ADDED Record-2-2 | Queue Size: 2
+[22:43:51.402] [Consumer-1     ] : PROCESSED Record-3-2 | Queue Size: 2
+[22:43:51.560] [Consumer-1     ] : PROCESSED Record-1-2 | Queue Size: 2
+[22:43:51.560] [Producer-3     ] : ADDED Record-3-3 | Queue Size: 2
+[22:43:51.620] [Consumer-1     ] : PROCESSED Record-2-2 | Queue Size: 2
+[22:43:51.620] [Producer-1     ] : ADDED Record-1-3 | Queue Size: 2
+[22:43:51.691] [Consumer-1     ] : PROCESSED Record-3-3 | Queue Size: 2
+[22:43:51.691] [Producer-2     ] : ADDED Record-2-3 | Queue Size: 2
+[22:43:51.762] [Consumer-1     ] : PROCESSED Record-1-3 | Queue Size: 2
+[22:43:51.762] [Producer-3     ] : ADDED Record-3-4 | Queue Size: 2
+[22:43:51.842] [Producer-1     ] : ADDED Record-1-4 | Queue Size: 2
+[22:43:51.842] [Consumer-1     ] : PROCESSED Record-2-3 | Queue Size: 2
+[22:43:51.969] [AUTO-SCALER    ] : High Load detected (100.0%). Deploying Emergency Consumer 1
+[22:43:51.971] [EmergencyConsumer-1] : STARTED.
+[22:43:51.971] [EmergencyConsumer-1] : PROCESSED Record-3-4 | Queue Size: 2
+[22:43:51.971] [Producer-2     ] : ADDED Record-2-4 | Queue Size: 2
+[22:43:52.055] [Consumer-1     ] : PROCESSED Record-1-4 | Queue Size: 2
+[22:43:52.055] [Producer-3     ] : ADDED Record-3-5 | Queue Size: 2
+[22:43:52.146] [Producer-1     ] : ADDED Record-1-5 | Queue Size: 2
+[22:43:52.146] [EmergencyConsumer-1] : PROCESSED Record-2-4 | Queue Size: 2
+[22:43:52.258] [Consumer-1     ] : PROCESSED Record-3-5 | Queue Size: 2
+[22:43:52.258] [Producer-2     ] : ADDED Record-2-5 | Queue Size: 2
+[22:43:52.294] [EmergencyConsumer-1] : PROCESSED Record-1-5 | Queue Size: 2
+[22:43:52.294] [Producer-3     ] : ADDED Record-3-6 | Queue Size: 2
+[22:43:52.422] [EmergencyConsumer-1] : PROCESSED Record-2-5 | Queue Size: 2
+[22:43:52.422] [Producer-1     ] : ADDED Record-1-6 | Queue Size: 2
+[22:43:52.430] [Consumer-1     ] : PROCESSED Record-3-6 | Queue Size: 2
+[22:43:52.430] [Producer-2     ] : ADDED Record-2-6 | Queue Size: 2
+[22:43:52.519] [Consumer-1     ] : PROCESSED Record-1-6 | Queue Size: 2
+[22:43:52.520] [Producer-3     ] : ADDED Record-3-7 | Queue Size: 2
+[22:43:52.648] [Consumer-1     ] : PROCESSED Record-2-6 | Queue Size: 2
+[22:43:52.648] [Producer-2     ] : ADDED Record-2-7 | Queue Size: 2
+[22:43:52.669] [Producer-1     ] : ADDED Record-1-7 | Queue Size: 2
+[22:43:52.671] [EmergencyConsumer-1] : PROCESSED Record-3-7 | Queue Size: 2
+[22:43:52.774] [EmergencyConsumer-1] : PROCESSED Record-2-7 | Queue Size: 2
+[22:43:52.774] [Producer-3     ] : ADDED Record-3-8 | Queue Size: 2
+[22:43:52.880] [Consumer-1     ] : PROCESSED Record-1-7 | Queue Size: 2
+[22:43:52.880] [Producer-2     ] : ADDED Record-2-8 | Queue Size: 2
+[22:43:52.947] [EmergencyConsumer-1] : PROCESSED Record-3-8 | Queue Size: 2
+[22:43:52.947] [Producer-1     ] : ADDED Record-1-8 | Queue Size: 2
+[22:43:52.972] [AUTO-SCALER    ] : High Load detected (100.0%). Deploying Emergency Consumer 2
+[22:43:52.974] [EmergencyConsumer-2] : STARTED.
+[22:43:52.974] [EmergencyConsumer-2] : PROCESSED Record-2-8 | Queue Size: 2
+[22:43:52.975] [Producer-3     ] : ADDED Record-3-9 | Queue Size: 2
+[22:43:53.128] [Consumer-1     ] : PROCESSED Record-1-8 | Queue Size: 2
+[22:43:53.128] [Producer-2     ] : ADDED Record-2-9 | Queue Size: 2
+[22:43:53.168] [EmergencyConsumer-1] : PROCESSED Record-3-9 | Queue Size: 2
+[22:43:53.168] [Producer-1     ] : ADDED Record-1-9 | Queue Size: 2
+[22:43:53.202] [Producer-3     ] : ADDED Record-3-10 | Queue Size: 2
+[22:43:53.202] [Producer-3     ] : FINISHED work.
+[22:43:53.202] [EmergencyConsumer-2] : PROCESSED Record-2-9 | Queue Size: 2
+[22:43:53.246] [EmergencyConsumer-1] : PROCESSED Record-1-9 | Queue Size: 1
+[22:43:53.249] [Producer-1     ] : ADDED Record-1-10 | Queue Size: 2
+[22:43:53.249] [Producer-1     ] : FINISHED work.
+[22:43:53.277] [EmergencyConsumer-2] : PROCESSED Record-3-10 | Queue Size: 2
+[22:43:53.277] [Producer-2     ] : ADDED Record-2-10 | Queue Size: 2
+[22:43:53.277] [Producer-2     ] : FINISHED work.
+[22:43:53.339] [Consumer-1     ] : PROCESSED Record-1-10 | Queue Size: 1
+[22:43:53.391] [EmergencyConsumer-2] : PROCESSED Record-2-10 | Queue Size: 0
+[22:43:53.483] [SYSTEM         ] : All 30 items processed.
+[22:43:53.483] [SYSTEM         ] : Initiating graceful shutdown...
+[22:43:53.483] [SYSTEM         ] : Stopping producers...
+[22:43:53.483] [AUTO-SCALER    ] : Initiating thread pool shutdown...
+[22:43:53.483] [AUTO-SCALER    ] : Waiting for producers to finish...
+[22:43:53.483] [AUTO-SCALER    ] : All producers finished. Queue can only shrink now.
+[22:43:53.483] [AUTO-SCALER    ] : Producer shutdown complete.
+[22:43:53.483] [SYSTEM         ] : All producers stopped. Queue can only shrink now.
+[22:43:53.483] [SYSTEM         ] : Inserting poison pill for consumers...
+[22:43:53.483] [SYSTEM         ] : Waiting for consumers to finish draining queue...
+[22:43:53.483] [SYSTEM         ] : Waiting up to 30 seconds for consumers to drain queue...
+[22:43:53.483] [EmergencyConsumer-1] : Received POISON PILL. Stopping.
+[22:43:53.483] [EmergencyConsumer-1] : SHUTDOWN complete.
+[22:43:53.507] [Consumer-1     ] : Received POISON PILL. Stopping.
+[22:43:53.507] [Consumer-1     ] : SHUTDOWN complete.
+[22:43:53.638] [EmergencyConsumer-2] : Received POISON PILL. Stopping.
+[22:43:53.638] [EmergencyConsumer-2] : SHUTDOWN complete.
+[22:43:53.638] [SYSTEM         ] : All consumers have shut down.
+[22:43:53.638] [SYSTEM         ] : Shutdown complete - all workers stopped gracefully.
+[22:43:53.638] [SYSTEM         ] : Analysis results printed to console.
+[22:43:53.639] [SYSTEM         ] : System Shutdown. Closing logs.
