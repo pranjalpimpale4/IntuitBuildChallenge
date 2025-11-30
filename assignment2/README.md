@@ -51,7 +51,7 @@
 
 ```bash
 # If using Git
-git clone <repository-url>
+git clone [<repository-url>](https://github.com/pranjalpimpale4/IntuitBuildChallenge)
 cd assignment2
 
 # Or extract the project ZIP file to your desired location
