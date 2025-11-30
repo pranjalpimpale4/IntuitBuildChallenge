@@ -12,7 +12,7 @@
 
 ## Overview
 
-A high-performance, thread-safe producer-consumer simulation system demonstrating modern Java concurrency best practices. Features include fair locking, safe shutdown patterns, dependency injection, and comprehensive test coverage.
+A high-performance, thread-safe producer-consumer simulation system. Features include fair locking, safe shutdown patterns, dependency injection, and comprehensive test coverage.
 
 > **For setup instructions, running the application, and sample output, see [README.md](README.md)**
 
