@@ -29,7 +29,7 @@
 2. **Revenue Matrix** - Product performance by market segment
 3. **Golden Bundle Finder** - Top revenue-generating product combinations
 4. **Strategic Risk Alerts** - Churn detection for high-value customers
-5. **Next Best Action Engine** - AI-driven upsell recommendations
+5. **Next Best Action Engine** - Upsell recommendations
 6. **Segment Unit Economics** - Statistical analysis and ARPU metrics
 
 ---
