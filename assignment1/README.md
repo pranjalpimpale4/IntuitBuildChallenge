@@ -1,7 +1,5 @@
 # Producer-Consumer Simulation System
 
-A high-performance, thread-safe producer-consumer simulation system demonstrating modern Java concurrency best practices.
-
 ## Table of Contents
 
 - [Overview](#overview)
