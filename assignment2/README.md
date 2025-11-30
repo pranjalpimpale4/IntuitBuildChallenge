@@ -29,7 +29,7 @@
 2. **Revenue Matrix** - Product performance by market segment
 3. **Golden Bundle Finder** - Top revenue-generating product combinations
 4. **Strategic Risk Alerts** - Churn detection for high-value customers
-5. **Next Best Action Engine** - AI-driven upsell recommendations
+5. **Next Best Action Engine** - Upsell recommendations
 6. **Segment Unit Economics** - Statistical analysis and ARPU metrics
 
 ---
@@ -51,7 +51,7 @@
 
 ```bash
 # If using Git
-git clone <repository-url>
+git clone https://github.com/pranjalpimpale4/IntuitBuildChallenge.git
 cd assignment2
 
 # Or extract the project ZIP file to your desired location
@@ -363,20 +363,6 @@ mvn exec:java -Dexec.mainClass="com.pranjal.assign2.DataSeeder"
 - Use Windows Terminal or PowerShell (not Command Prompt)
 - On Linux/Mac, ensure terminal supports ANSI codes
 - Colors are optional - functionality works without them
-
-### Issue: Maven not found
-
-**Solution:**
-- Install Maven and add to PATH
-- Or use IDE's built-in Maven support
-- Or compile manually with `javac`
-
-### Issue: Java version error
-
-**Solution:**
-- Ensure JDK 17+ is installed
-- Check: `java -version`
-- Update JAVA_HOME if needed
 
 ---
 
